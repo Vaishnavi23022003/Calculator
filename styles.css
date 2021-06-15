@@ -1,0 +1,93 @@
+.box {
+  width: 100vw;
+  height: 100vh;
+  min-height: 550px;
+  background: linear-gradient(
+    135deg,
+    #827e7aaa 0 12%,
+    #b7b4afcc 0 50%,
+    #7f7870cc 0 90%,
+    #5f564dcc 0 98%
+  );
+  padding: 40px 0;
+  font-family: "Roboto", sans-serif;
+}
+.cal-box {
+  width: 18.75rem;
+  height: 31.25rem;
+  background-color: aliceblue;
+  margin: 0 auto;
+  position: relative;
+  box-shadow: 7px 20px 100px rgb(0, 0, 0, 0.6);
+}
+.num-box {
+  width: 21.875rem;
+  height: 21.875rem;
+  position: absolute;
+  bottom: 3.125rem;
+  left: -1.5625rem;
+  background-color: #353a47dd;
+  padding: 3.125rem;
+  z-index: 1;
+  box-shadow: 5px 15px 40px rgb(0, 0, 0, 0.6);
+}
+.equal-box {
+  width: 18.75rem;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(135deg, #ff7737, #e75432);
+
+  padding: 0px;
+  font-size: 50px;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  text-align: center;
+  line-height: 1;
+}
+.equal-box:hover {
+  background: orangered;
+  color: black;
+  font-weight: bolder;
+}
+/* calculator keys */
+
+.number {
+  display: inline-block;
+  width: 3.6875rem;
+  height: 3.125rem;
+  text-align: center;
+  margin-top: 0.25rem;
+  padding: 0.1875rem;
+  padding-left: 0.0625rem;
+  font-size: 1.75rem;
+
+  color: white;
+}
+.number:hover {
+  background-color: #353a4733;
+}
+
+.result,
+.history {
+  text-align: right;
+  padding-right: 10px;
+  line-height: 1;
+  font-weight: 600;
+}
+
+.history {
+  padding-top: 10px;
+  color: gray;
+}
+
+.small-text {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 350px) {
+  html {
+    font-size: 10px;
+  }
+}
